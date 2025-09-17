@@ -10,12 +10,13 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
 
 @NgModule({
-  declarations: [AppComponent, VersionControlComponent, VcLogsComponent],
+  declarations: [AppComponent, VersionControlComponent],
   imports: [
     HeaderComponent,
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
     ReactiveFormsModule,
+    VcLogsComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
